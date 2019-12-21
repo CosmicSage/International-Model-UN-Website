@@ -1,0 +1,31 @@
+/* Navbar CSS */
+.custom_nav {
+  background-color: #121E32 !important;
+}
+.Brand:hover {
+  background-color: rgba(0, 0, 0, 1000) !important;
+}
+.nav-link:hover {
+  color: #FFB444 !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 1px !important;
+}
+@media (min-width : 1250px) {
+  .nav-link {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 0.92rem !important;
+  }
+  .Brand {
+    margin-left: 90px;
+    -webkit-transition : all .7s wase-out;
+    transition: all .7s ease-out;
+    height: auto;
+    max-width: 100%;
+  }
+  .secondary {
+    margin-left: 164px;
+  }
+}
+/* End Of Navbar CSS */
+
