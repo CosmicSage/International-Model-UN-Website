@@ -1,33 +1,27 @@
 /* First Div */
-.first_div {
-  background-image: url("../images/nasa-53884-unsplash (1).png");
-  background-color: blue;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@import "./first_div.css";
+.changeButtonRight:hover, .changeButtonLeft:hover{
+  opacity: 0.5;
+}
+@media (max-width : 700px) {
+  .changeButtonRight {
+    position: absolute;
+    right: 0%;
+    top: 40%;
+    transform: translateX(-50%) translateY(-50%);
+    width: -1px;
+  }
+  .conference {
+    width : 1000%;
+  }
+  .changeButtonLeft {
+    position: absolute;
+    left: 10%;
+    top: 47.5%;
+    transform: translateX(-50%) translateY(-50%);
+  }
 }
 
-.changeButton:hover {
-  opacity: 0.5
-
-}
-
-.first_div_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height : 90vh;
-}
-
-.Left {
-  text-align: center;
-  color: GhostWhite;
-}
-.Left_Title {
-  font-weight: bold;
-  font-size: 28px;
-}
 /* OpaqueBox CSS */
 .opaque_head {
   padding-top: 43px;
@@ -53,13 +47,16 @@
     text-align: center;
     padding-bottom: 20px;
   }
-  @media (max-width : 370px) {
-    .first_div {
-        height: 140vh;
-    }
-  }
 }
+
 .conferences {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 85px;
+  overflow: auto;
+}
+
+.carousel {
   display: flex;
   flex-direction: row;
   margin-bottom: 85px;
@@ -80,18 +77,13 @@
   flex-direction: column;
   flex-flow: column-reverse;
 }
+
 .service {
   background: #FFFFFF;
   box-shadow: 0px 4px 20px rgba(145, 145, 145, 0.13);
   border-radius: 10px;
 }
 @media (min-width : 900px) {
-  .Left_Title {
-    width : 544px;
-    height: 137px;
-    font-size: 48px;
-    line-height: 59px;
-  }
   .opaque_head {
     padding-right: 134px;
   }
@@ -102,25 +94,17 @@
   .opaque {
     width : 452px;
   }
-  .Left_Sub {
-    margin-left: 55px;
-    padding-top: 30px;
-    text-align: left;
-  }
-  .first_div_content {
-    background: linear-gradient(180deg, transparent 0%, #000000 100%);
-    padding-top: 83px;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  .first_div {
-    height: 90vh;
-  }
   .second_div {
+    overflow: hidden;
     margin-left: 120px !important;
     margin-top: 50px !important;
     margin-right: 50px !important;
+  }
+  .changeButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 80px;
   }
   .conference {
     width: 300px;
@@ -131,6 +115,9 @@
   .service {
     width: 479px;
     height: 271px;
+  }
+  .conferences {
+    width: 950px;
   }
 }
 /* EndOfFirstDiv */

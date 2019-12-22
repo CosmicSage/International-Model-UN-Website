@@ -1,0 +1,71 @@
+.first_div {
+  background-image: url("../images/nasa-53884-unsplash (1).png");
+  background-color: blue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first_div_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height : 90vh;
+}
+
+.Left {
+  text-align: center;
+  color: GhostWhite;
+}
+.Left_Title {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+@media (max-width : 900px) {
+  .RoundButton {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  @media (max-width : 376px) {
+    .first_div {
+        height: 133vh;
+    }
+    }
+    @media (min-height : 811px) {
+      .first_div {
+        height: 100vh;
+      }
+  }
+  @media (min-width : 413px) {
+    .first_div {
+        height: 110vh;
+    }
+  }
+}
+
+@media (min-width : 900px) {
+  .Left_Title {
+    width : 544px;
+    height: 137px;
+    font-size: 48px;
+    line-height: 59px;
+  }
+  .Left_Sub {
+    margin-left: 55px;
+    padding-top: 30px;
+    text-align: left;
+  }
+  .first_div_content {
+    background: linear-gradient(180deg, transparent 0%, #000000 100%);
+    padding-top: 83px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .first_div {
+    height: 90vh;
+  }
+
+}

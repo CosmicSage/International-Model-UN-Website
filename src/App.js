@@ -69,14 +69,19 @@ function HomePage() {
       </div>
       <div className="second_div">
         <h1 style={styles.Title2}>Upcoming MUN<br/>Conferences</h1>
-        <div className="conferences">
-          {Conferences.map(con => (
-            <div className="wrap"><Conference name={con.name} img={con.img} location={con.location}/></div>
-          ))}
+        <div className="carousel">
+          <div className="conferences">
+            {Conferences.map((con, id) => (
+              <div className="wrap"><Conference name={con.name} img={con.img} location={con.location}/></div>
+            ))}
+          </div>
+          <div className="changeButtons" style={{textAlign : "center"}}>
+            <img className="changeButtonLeft" src={`${require('./static/images/changeButton.png')}`}/>
+            <img onClick={() => {
+              alert("BAnge");
+            }} style={{transform : "rotate(180deg)"}} className="changeButtonRight" src={`${require('./static/images/changeButton.png')}`}/>
+          </div>
         </div>
-        <img className="changeButton" onClick={() => {
-          alert("Bang ")
-        }} src={`${require('./static/images/changeButton.png')}`}/>
         <h1 style={styles.Title2}>All you need<br/>in one place</h1>
         <div className="services">
           <div className="service">
