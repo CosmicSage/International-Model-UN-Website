@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3ee82ac06a67bdff7f50592b829bd553",
+    "revision": "29f8b53eecc3c8a2e4301def54f462f3",
     "url": "/International-Model-UN-Website/index.html"
   },
   {
-    "revision": "76eb7552d7c84558187a",
+    "revision": "84a4999038d911e14781",
     "url": "/International-Model-UN-Website/static/css/2.64a99b10.chunk.css"
   },
   {
-    "revision": "73c2859d3fc5cea05cf8",
-    "url": "/International-Model-UN-Website/static/css/main.274c1071.chunk.css"
+    "revision": "157ab574999c17ffa3a7",
+    "url": "/International-Model-UN-Website/static/css/main.cdb4d17f.chunk.css"
   },
   {
-    "revision": "76eb7552d7c84558187a",
-    "url": "/International-Model-UN-Website/static/js/2.8b864c58.chunk.js"
+    "revision": "84a4999038d911e14781",
+    "url": "/International-Model-UN-Website/static/js/2.6d8e8cf6.chunk.js"
   },
   {
     "revision": "d705cb622423d72c5defbf368ca70dcc",
-    "url": "/International-Model-UN-Website/static/js/2.8b864c58.chunk.js.LICENSE"
+    "url": "/International-Model-UN-Website/static/js/2.6d8e8cf6.chunk.js.LICENSE"
   },
   {
-    "revision": "73c2859d3fc5cea05cf8",
-    "url": "/International-Model-UN-Website/static/js/main.25745710.chunk.js"
+    "revision": "157ab574999c17ffa3a7",
+    "url": "/International-Model-UN-Website/static/js/main.d84668bd.chunk.js"
   },
   {
     "revision": "e61a7906e53a5d1405a1",
     "url": "/International-Model-UN-Website/static/js/runtime-main.87ef2298.js"
+  },
+  {
+    "revision": "095f796fe820743e0c91302e43504a1e",
+    "url": "/International-Model-UN-Website/static/media/blog_img.095f796f.png"
   },
   {
     "revision": "7167ef84ea9a839f1d0105f4a56da4c2",
