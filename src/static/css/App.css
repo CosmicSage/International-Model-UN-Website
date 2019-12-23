@@ -2,6 +2,9 @@
 @import "./first_div.css";
 @import "./ServiceBox.css";
 @import "./blogs.css";
+.invert {
+  filter: invert(100%);
+}
 .btn-outline-info {
   color : #5E44FF !important;
   border-color: #5E44FF !important;
@@ -23,9 +26,7 @@
     width: -1px;
     opacity: 0.5;
   }
-  .conference {
-    width : 1000%;
-  }
+
   .changeButtonLeft {
     position: absolute;
     left: 10%;
@@ -67,7 +68,8 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 45px;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .conference {

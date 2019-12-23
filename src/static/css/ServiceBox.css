@@ -37,22 +37,24 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-left: 21px;
   }
   .service_body {
     margin-left: 84px;
-    margin-top: 18px;
+    margin-top: 15px;
     flex-flow: column;
   }
   .service {
     width: 479px;
     height: 271px;
+    margin-left: 0px;
   }
   .service_head {
-    margin-left: 29px;
+    margin-left: 10px;
     padding-top: 30px;
   }
   .service_pad {
     padding-bottom: 30px;
-    padding-right: 165px;
+    padding-right: 90px;
   }
 }
