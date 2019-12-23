@@ -2,8 +2,9 @@
   .footer_first {
     display: flex;
     flex-direction: row !important;
+    padding-bottom: 20px;
   }
-  .footer_about {
+  .footer_about, .footer_links {
     border-right: 1px solid #ffffff;
   }
   .footer_links {
@@ -17,5 +18,23 @@
     flex-direction: column;
     padding-left: 20px;
   }
-
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+  }
+  .footer {
+    justify-content: space-around;
+    align-items: center;
+  }
 }
+.footer {
+  padding: 20px;
+  padding-top: 40px !important;
+  color: #fff;
+  background-color: #121E32;
+  display: flex;
+  flex-direction: column;
+}
+/* color : "#fff", backgroundColor : "#121E32", height : "410px", display : "flex",
+flexDirection : "column", justifyContent : "space-around", alignItems : "center" */

@@ -1,15 +1,27 @@
 /* First Div */
 @import "./first_div.css";
+@import "./ServiceBox.css";
+@import "./blogs.css";
+.btn-outline-info {
+  color : #5E44FF !important;
+  border-color: #5E44FF !important;
+}
+.btn-outline-info:hover {
+  background-color: #5E44FF !important;
+  color: #fff !important;
+}
+
 .changeButtonRight:hover, .changeButtonLeft:hover{
-  opacity: 0.5;
+  opacity: 1;
 }
 @media (max-width : 700px) {
   .changeButtonRight {
     position: absolute;
     right: 0%;
-    top: 40%;
+    top: 30%;
     transform: translateX(-50%) translateY(-50%);
     width: -1px;
+    opacity: 0.5;
   }
   .conference {
     width : 1000%;
@@ -17,8 +29,9 @@
   .changeButtonLeft {
     position: absolute;
     left: 10%;
-    top: 47.5%;
+    top: 37.5%;
     transform: translateX(-50%) translateY(-50%);
+    opacity: 0.5;
   }
 }
 
@@ -42,31 +55,25 @@
   border-radius: 50px !important;
 }
 
-@media (max-width : 900px) {
-  .RoundButton {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-}
 
 .conferences {
   display: flex;
   flex-direction: row;
   margin-bottom: 85px;
-  overflow: auto;
+  overflow-x: auto;
 }
 
 .carousel {
   display: flex;
   flex-direction: row;
-  margin-bottom: 85px;
+  margin-bottom: 45px;
   overflow: auto;
 }
 
 .conference {
   padding-left: 20px;
   padding-bottom: 20px;
-  width: 100%;
+  width: 400px;
   color: GhostWhite;
   /* background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #1D1D1D 100%) !important; */
   background-position: center;
@@ -78,11 +85,10 @@
   flex-flow: column-reverse;
 }
 
-.service {
-  background: #FFFFFF;
-  box-shadow: 0px 4px 20px rgba(145, 145, 145, 0.13);
-  border-radius: 10px;
+.second_div {
+  padding: 10px;
 }
+
 @media (min-width : 900px) {
   .opaque_head {
     padding-right: 134px;
@@ -112,10 +118,7 @@
   .wrap {
     padding-right: 25px;
   }
-  .service {
-    width: 479px;
-    height: 271px;
-  }
+
   .conferences {
     width: 950px;
   }

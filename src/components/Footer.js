@@ -1,10 +1,11 @@
 import React from "react";
 import "../static/css/footer.css";
+import "../static/css/ServiceBox.css";
 const Links = ["Search For IMUNs", "Organise IMUN", "Features", "Blogs"];
 const MUN_LINKS = ["MUN Conference Highlights", "MUN Conference List", "MUN Conference Calendar", "MUN Conference Map"];
 export default function Footer() {
   return (
-    <div style={styles.footer}>
+    <div className="footer">
       <div className="footer_first">
         <div className="footer_about">
         <h5 style={styles.about}>About mymun</h5>
@@ -15,16 +16,19 @@ export default function Footer() {
           <div style={{paddingRight : 40}} className="footer_link">{Links.map(link => (<a style={styles.links}>{link}</a>))}</div>
           <div style={{paddingLeft : 40}} className="footer_link">{MUN_LINKS.map(link => (<a style={styles.links}>{link}</a>))}</div>
         </div>
+        <div className="contact">
+          <div className="service_head">
+            <img src={require(("../static/images/call.png"))}/>
+            <div style={{paddingLeft : 8}}><span>Phone</span></div>
+            <p style={{fontSize : 10}}>(+91) 999 741 5973</p>
+          </div>
+        </div>
       </div>
       <p>COPYRIGHT © 2018-2019, INTERNATIONAL MODEL UNITED NATIONS</p>
     </div>
   );
 }
 const styles = {
-  footer : {
-    color : "#fff", backgroundColor : "#121E32", height : "410px", display : "flex",
-    flexDirection : "column", justifyContent : "space-around", alignItems : "center"
-  },
   about : { fontSize : 24 },
   links : {paddingBottom : 10, fontSize: 22, color : "#fff"}
 }

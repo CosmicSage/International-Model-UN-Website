@@ -25,15 +25,18 @@
 
 @media (max-width : 900px) {
   .RoundButton {
-    text-align: center;
     padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  .RoundButton {
+    text-align: center;
   }
   @media (max-width : 376px) {
     .first_div {
-        height: 133vh;
+        height: 140vh;
     }
-    }
-    @media (min-height : 811px) {
+  }
+  @media (min-height : 730px) {
       .first_div {
         height: 100vh;
       }

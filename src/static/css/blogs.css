@@ -1,0 +1,10 @@
+.blog {
+  background: #FFFFFF;
+  z-index: 10;
+  /* border: 1.1px solid #000; */
+  box-shadow: 0px 4px 20px rgba(145, 145, 145, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
