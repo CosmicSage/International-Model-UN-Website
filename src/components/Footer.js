@@ -16,7 +16,7 @@ export default function Footer() {
           <div style={{paddingRight : 40}} className="footer_link">{Links.map(link => (<a style={styles.links}>{link}</a>))}</div>
           <div style={{paddingLeft : 40}} className="footer_link">{MUN_LINKS.map(link => (<a style={styles.links}>{link}</a>))}</div>
         </div>
-        <div className="contact">
+        <div className="footer_contact">
           <div className="service_head">
             <img src={require(("../static/images/call.png"))}/>
             <div style={{paddingLeft : 8}}><span>Phone</span></div>

@@ -2,6 +2,7 @@ import React from 'react';
 import './static/css/App.css';
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
+const Boxes = ["Name", "Email-ID", "Subject", "Company"];
 const OpaqueBoxContentList = [
   {img : "./static/images/Search-Vector.png", head : "Search For MUNs", body : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,", button : "Search"},
   {img : "./static/images/Organise-Vector.png", head : "Organise your MUN", body : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,", button : "Organise"}
@@ -31,22 +32,22 @@ function Blog(props) {
   return (
     <div className="service blog">
       <div className="blog_content">
-      <div className="blog_poster">
-      <div style={{backgroundImage : `url(${require(`${props.img}`)})`}} className="blog_img"></div>
-      <div className="blog_meta">
-      <span style={{paddingLeft : 2, fontWeight : "bold"}}>{props.time}</span>
-      <div className="blog_share">
-      <span>Share :</span>
-      <img style={{padding : 5}} src={require("./static/images/facebook.png")} />
-      <img src={require("./static/images/instagram.png")} />
-      </div>
-      </div>
-      </div>
-      <div className="blog_title">
-      <p style={{fontWeight : "bold"}}>{props.title}</p>
-      <p>Posted by {props.author}</p>
-      <RoundArrowButton color="warning" size="lg" value="Read More" arrow="./static/images/whitearrow.png" invert="invert" />
-      </div>
+        <div className="blog_poster">
+          <div style={{backgroundImage : `url(${require(`${props.img}`)})`}} className="blog_img"></div>
+            <div style={{color : "#fff"}} className="blog_meta">
+              <span style={{paddingLeft : 5, fontWeight : "bold"}}>{props.time}</span>
+              <div className="blog_share">
+                <span>Share :</span>
+                <img style={{padding : 5}} src={require("./static/images/facebook.png")} />
+                <img src={require("./static/images/instagram.png")} />
+              </div>
+            </div>
+          </div>
+        <div className="blog_title">
+          <p style={{fontWeight : "bold"}}>{props.title}</p>
+          <p>Posted by {props.author}</p>
+          <RoundArrowButton color="warning" size="lg" value="Read More" arrow="./static/images/whitearrow.png" invert="invert" />
+        </div>
       </div>
     </div>
   );
@@ -94,10 +95,12 @@ const OpaqueBox = props => {
 }
 function Conference (props) {
   return (
+    <div className="wrap">
     <div className="conference" style={{backgroundImage : `url(${require(`${props.img}`)})`}}>
     <RoundArrowButton color="light" value="Know More" size="lg" arrow="./static/images/whitearrow.png"/>
     <p style={{fontSize : "18px"}}>{props.location}</p>
     <h3 style={{ fontSize : "30px"}} dangerouslySetInnerHTML={{ __html: props.name }}/>
+    </div>
     </div>
   );
 }
@@ -111,6 +114,13 @@ const RoundArrowButton = props => {console.log(props.value);
   return (
     <div>
       <button className={`btn btn-${props.size} btn-outline-${props.color}`}>{props.value}<img className={props.invert} style={{paddingLeft : number}} src={arrow}/></button>
+    </div>
+  );
+}
+function SpecialInputBox(props) {
+  return (
+    <div className="custom_input">
+      <span className="input_field">{props.name}</span><input className="form-control custom_border" />
     </div>
   );
 }
@@ -138,25 +148,46 @@ function HomePage() {
         <div className="carousel">
           <div className="conferences">
             {Conferences.map((con, id) => (
-              <div className="wrap"><Conference name={con.name} img={con.img} location={con.location}/></div>
+              <Conference name={con.name} img={con.img} location={con.location}/>
             ))}
           </div>
           <ChangeButtons />
         </div>
         <h1 style={styles.Title2}>All you need<br/>in one place</h1>
         <div className="services">
-        {ServicesList.map(service => (
-          <ServiceBox img={service.img} value={service.value} head={service.head} body={service.body} color={service.color}/>
-        ))}
+          {ServicesList.map(service => (
+            <ServiceBox img={service.img} value={service.value} head={service.head} body={service.body} color={service.color}/>
+          ))}
         </div>
         <h1 style={styles.Title2}>Our Blogs</h1>
         <div className="carousel">
-          <div className="blogs">
+          <div className="conferences">
             {Blogs.map(blog => (
               <Blog img={blog.img} time={blog.time} author={blog.author} title={blog.title}/>
             ))}
           </div>
           <ChangeButtons />
+        </div>
+        <h1 style={styles.Title2}>Get In Touch</h1>
+        <div className="contact">
+          <div className="service contact_box">
+            <div className="contact_size">
+              <p style={{color : "#15477A", fontSize : 18, fontWeight : "bold"}}>Say Something</p>
+              <div className="inputs">
+                {Boxes.map(box => ( <SpecialInputBox name={box}/> ) )}
+                <div style={{width : "90%", padding : 10}}><textarea placeholder="Your Message" className="form-control custom_border" rows='6' column="5"></textarea></div>
+              </div>
+              <div style={{flexFlow : "row-reverse", padding : 10}} ><button className="btn btn-outline-primary">send</button></div>
+            </div>
+          </div>
+          <div className="contact_info">
+            <div className="info_element">
+            <img src={require("./static/images/call.png")}/>
+            <div className="info_content">
+            <span>Phone</span><p>(+91) 999 741 5973</p>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
       <Footer/>
@@ -175,5 +206,10 @@ let styles = {
     fontSize : 24, color : "#FFB444", paddingBottom : 20, marginTop : 1
   }}
 export default HomePage;
-// https://www.figma.com/file/xX9n7skLyaoc6DB2xOA7ss/Untitled?node-id=0%3A1
-// <OpaqueBox style={{head : {paddingRight : "1px !important",fontSize : 14, color : "#000"}}} img="./static/images/market-vector.png" head="Powerful Marketing and Conference Management Tools" body="Run your conference's registration with a professional, powerful conference management system, hand-built for MUN. Advertise to 100k+ MUNers." button="primary"/>
+/**https://www.figma.com/file/xX9n7skLyaoc6DB2xOA7ss/Untitled?node-id=0%3A1
+<OpaqueBox style={{head : {paddingRight : "1px !important",fontSize : 14, color : "#000"}}} img="./static/images/market-vector.png" head="Powerful Marketing and Conference Management Tools" body="Run your conference's registration with a professional, powerful conference management system, hand-built for MUN. Advertise to 100k+ MUNers." button="primary"/>
+<img src={require("./static/images/name-input.png")} dangerouslySetInnerHTML={{ __html: "props.name" }}/>
+<input className="custom_input"/>
+
+
+<div style={{backgroundImage : `url(${require(`${"./static/images/name-input.png"}`)})`}}><input className="custom_input"/></div>**/

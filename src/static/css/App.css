@@ -2,6 +2,7 @@
 @import "./first_div.css";
 @import "./ServiceBox.css";
 @import "./blogs.css";
+@import "./contact.css";
 .invert {
   filter: invert(100%);
 }
@@ -62,6 +63,7 @@
   flex-direction: row;
   margin-bottom: 85px;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .carousel {

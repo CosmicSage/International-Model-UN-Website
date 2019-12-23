@@ -1,0 +1,68 @@
+.contact {
+  display: flex;
+  margin : 10px;
+  flex-direction: column;
+}
+.contact_size {
+  padding: 25px;
+  padding-bottom: 5px !important;
+}
+.inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height : 80%;
+  justify-content: center;
+  margin-top: 0px !important;
+}
+.custom_border {
+  border-color: #2D5A88 !important;
+  border-width: 2px !important;
+  border-radius: 10px !important;
+}
+.custom_input {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  /* border-top-style: */
+}
+
+/* Most important CSS */
+.input_field {
+  margin-right: 100px !important;
+  margin: 47px;
+  /* width : 50px; */
+  margin-bottom: -10px !important;
+  background-color: #fff;
+  z-index: 5;
+}
+
+.info_element {
+  display: flex;
+  flex-direction: row;
+}
+.contact_box {
+  width: 100%;
+  margin-left: 0px !important;
+}
+@media (min-width : 900px) {
+  .contact_box {
+    display: flex;
+    flex-direction: row;
+    height : 655px;
+    width: 830px;
+  }
+  .contact {
+    margin-left: 10px !important;
+    flex-direction: row;
+  }
+  .contact_info {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  }
+  .custom_input {
+    padding-right: 100px;
+  }
+}

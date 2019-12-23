@@ -1,8 +1,3 @@
-.blog {
-  height : 491px;
-  color : #fff;
-  width: 300px;
-}
 .blogs {
   display: flex;
   flex-direction: row;
@@ -40,13 +35,18 @@
   align-items: left;
   margin: 20px;
 }
+
+.blog_content {
+  width: 300px;
+}
+
 @media (min-width : 900px) {
   .blogs {
     width : 950px;
   }
   .blog {
     height: 491px;
-    width: 500px !important;
+    margin-right: 50px;
   }
   .blog_poster {
     flex-direction: row;
