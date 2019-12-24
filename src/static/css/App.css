@@ -3,6 +3,7 @@
 @import "./ServiceBox.css";
 @import "./blogs.css";
 @import "./contact.css";
+@import "./carousel.css";
 .invert {
   filter: invert(100%);
 }

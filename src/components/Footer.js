@@ -3,6 +3,21 @@ import "../static/css/footer.css";
 import "../static/css/ServiceBox.css";
 const Links = ["Search For IMUNs", "Organise IMUN", "Features", "Blogs"];
 const MUN_LINKS = ["MUN Conference Highlights", "MUN Conference List", "MUN Conference Calendar", "MUN Conference Map"];
+const Infos = [
+  {img : require("../static/images/call.png"), title : "Phone", value : "(+91) 999 741 5973"},
+  {img : require("../static/images/mail.png"), title : "Mail", value : "info@internationalmun.org"},
+  {img : require("../static/images/location.png"), title : "Address", value : "E-73 Sector 50, Gautam Budh Nagar, Noida, India - 201 304"},
+
+];
+const InfoElement = props => (
+  <div className="info_element">
+    <p style={{fontSize : 8}}><img className="invert" src={props.img}/></p>
+    <div className="info_content">
+      <span>{props.title}</span><p style={{color : "#fff", fontSize : 20, paddingBottom : 10}}>{props.value}</p>
+    </div>
+  </div>
+);
+
 export default function Footer() {
   return (
     <div className="footer">
@@ -10,17 +25,15 @@ export default function Footer() {
         <div className="footer_about">
         <h5 style={styles.about}>About mymun</h5>
         <p>The ultimate MUN database, conference management tool, and social network.</p>
-        <p>Join over 100,000 muners to discover new MUN conferences, organize your own MUN conference, research and publish Position Papers, travel cheaply and securely, and make friends for life.</p>
+        <span>Join over 100,000 muners to discover new MUN conferences, organize your own MUN conference, research and publish Position Papers, travel cheaply and securely, and make friends for life.</span>
         </div>
         <div className="footer_links">
-          <div style={{paddingRight : 40}} className="footer_link">{Links.map(link => (<a style={styles.links}>{link}</a>))}</div>
-          <div style={{paddingLeft : 40}} className="footer_link">{MUN_LINKS.map(link => (<a style={styles.links}>{link}</a>))}</div>
+          <div style={{width : '100%', padding : 40}}>{Links.map(link => <a>{link}</a>)}</div>
+          <div style={{width : '100%', padding : 40}}>{MUN_LINKS.map(link => <a>{link}</a>)}</div>
         </div>
         <div className="footer_contact">
-          <div className="service_head">
-            <img src={require(("../static/images/call.png"))}/>
-            <div style={{paddingLeft : 8}}><span>Phone</span></div>
-            <p style={{fontSize : 10}}>(+91) 999 741 5973</p>
+          <div className="contact_info">
+            {Infos.map(info => <InfoElement img={info.img} title={info.title} value={info.value} />)}
           </div>
         </div>
       </div>
@@ -29,6 +42,5 @@ export default function Footer() {
   );
 }
 const styles = {
-  about : { fontSize : 24 },
-  links : {paddingBottom : 10, fontSize: 22, color : "#fff"}
+  about : { fontSize : 24 }, links : {fontSize : 20}
 }

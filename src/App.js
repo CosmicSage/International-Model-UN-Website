@@ -2,6 +2,7 @@ import React from 'react';
 import './static/css/App.css';
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
+import Carousel from "./components/Review.js";
 const Boxes = ["Name", "Email-ID", "Subject", "Company"];
 const OpaqueBoxContentList = [
   {img : "./static/images/Search-Vector.png", head : "Search For MUNs", body : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,", button : "Search"},
@@ -10,7 +11,7 @@ const OpaqueBoxContentList = [
 const Blogs = [
   {time : "Dec 12", img : "./static/images/blog_img.png", author : "Jane Doe", title : "Quality vs Quantity of delegates! What matters the most in a MUN?"},
   {time : "Dec 12", img : "./static/images/blog_img.png", author : "Jane Doe", title : "Quality vs Quantity of delegates! What matters the most in a MUN?"},
-  {time : "Dec 12", img : "./static/images/blog_img.png", author : "Jane Doe", title : "Quality vs Quantity of delegates! What matters the most in a MUN?"},
+  {time : "Dec 511", img : "./static/images/blog_img.png", author : "Jane Doe", title : "Quality vs Quantity of delegates! What matters the most in a MUN?"},
   {time : "Dec 12", img : "./static/images/blog_img.png", author : "Jane Doe", title : "Quality vs Quantity of delegates! What matters the most in a MUN?"},
   {time : "Dec 12", img : "./static/images/blog_img.png", author : "Jane Doe", title : "Quality vs Quantity of delegates! What matters the most in a MUN?"},
 ];
@@ -27,6 +28,12 @@ const ServicesList = [
   {value : "For Participants", img : "tree-vector.png", head : "The Biggest MUN Database with Easy Applications", body : "Let mymun's professional, experienced team help you find the best group rate for your hotel and flights!", color : "info"},
   {value : "For Groups", img : "butler-vector.png", head : "Personalized Travel Service for Your Delegation", body : "Special rates for flights and hotels as well as exclusive insurance deals, adventure tours, car rentals and more.", color : "success"},
   {value : "For Everyone", img : "airplane-vector.png", head : "The Best Flights, Hotels, Trips and Insurances", body : "Looking for your next conference? Browse the largest database of Model UN, Model EU, and other political simulation conferences and apply with one click!", color : "warning"},
+];
+const Infos = [
+  {img : "./static/images/call.png", title : "Phone", value : "(+91) 999 741 5973"},
+  {img : "./static/images/mail.png", title : "Mail", value : "info@internationalmun.org"},
+  {img : "./static/images/location.png", title : "Address", value : "E-73 Sector 50, Gautam Budh Nagar, Noida, India - 201 304"},
+
 ];
 function Blog(props) {
   return (
@@ -124,7 +131,15 @@ function SpecialInputBox(props) {
     </div>
   );
 }
-function HomePage() {
+const InfoElement = props => (
+  <div className="info_element">
+    <p style={{fontSize : 8}}><img src={require(`${props.img}`)}/></p>
+    <div className="info_content">
+      <span>{props.title}</span><p style={{color : "#0E3660", fontSize : 20, paddingBottom : 10}}>{props.value}</p>
+    </div>
+  </div>
+);
+export default function HomePage() {
   return (
     <>
       <Header />
@@ -168,25 +183,24 @@ function HomePage() {
           </div>
           <ChangeButtons />
         </div>
+        <h1 style={styles.Title2}>What people have to say about us!</h1>
+        <div className="reviews">
+          <Carousel />
+        </div>
         <h1 style={styles.Title2}>Get In Touch</h1>
         <div className="contact">
           <div className="service contact_box">
             <div className="contact_size">
               <p style={{color : "#15477A", fontSize : 18, fontWeight : "bold"}}>Say Something</p>
               <div className="inputs">
-                {Boxes.map(box => ( <SpecialInputBox name={box}/> ) )}
+                {Boxes.map(box =>  <SpecialInputBox name={box}/>)}
                 <div style={{width : "90%", padding : 10}}><textarea placeholder="Your Message" className="form-control custom_border" rows='6' column="5"></textarea></div>
               </div>
               <div style={{flexFlow : "row-reverse", padding : 10}} ><button className="btn btn-outline-primary">send</button></div>
             </div>
           </div>
           <div className="contact_info">
-            <div className="info_element">
-            <img src={require("./static/images/call.png")}/>
-            <div className="info_content">
-            <span>Phone</span><p>(+91) 999 741 5973</p>
-            </div>
-          </div>
+            {Infos.map(info => <InfoElement img={info.img} title={info.title} value={info.value} />)}
           </div>
         </div>
       </div>
@@ -205,11 +219,8 @@ let styles = {
   Title2 : {
     fontSize : 24, color : "#FFB444", paddingBottom : 20, marginTop : 1
   }}
-export default HomePage;
 /**https://www.figma.com/file/xX9n7skLyaoc6DB2xOA7ss/Untitled?node-id=0%3A1
-<OpaqueBox style={{head : {paddingRight : "1px !important",fontSize : 14, color : "#000"}}} img="./static/images/market-vector.png" head="Powerful Marketing and Conference Management Tools" body="Run your conference's registration with a professional, powerful conference management system, hand-built for MUN. Advertise to 100k+ MUNers." button="primary"/>
-<img src={require("./static/images/name-input.png")} dangerouslySetInnerHTML={{ __html: "props.name" }}/>
-<input className="custom_input"/>
-
-
-<div style={{backgroundImage : `url(${require(`${"./static/images/name-input.png"}`)})`}}><input className="custom_input"/></div>**/
+<div className="carousel-item">
+  <div className="d-block w-1oo carousel_slide"></div>
+</div>
+**/
