@@ -28,8 +28,8 @@ export default function Footer() {
         <span>Join over 100,000 muners to discover new MUN conferences, organize your own MUN conference, research and publish Position Papers, travel cheaply and securely, and make friends for life.</span>
         </div>
         <div className="footer_links">
-          <div style={{width : '100%', padding : 40}}>{Links.map(link => <a>{link}</a>)}</div>
-          <div style={{width : '100%', padding : 40}}>{MUN_LINKS.map(link => <a>{link}</a>)}</div>
+          <div style={{width : '100%', padding : 40}}>{Links.map(link => <p>{link}</p>)}</div>
+          <div style={{width : '100%', padding : 40}}>{MUN_LINKS.map(link => <p>{link}</p>)}</div>
         </div>
         <div className="footer_contact">
           <div className="contact_info">
