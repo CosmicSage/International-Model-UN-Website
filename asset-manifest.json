@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/International-Model-UN-Website/static/css/main.002d3436.chunk.css",
-    "main.js": "/International-Model-UN-Website/static/js/main.714e493c.chunk.js",
-    "main.js.map": "/International-Model-UN-Website/static/js/main.714e493c.chunk.js.map",
+    "main.css": "/International-Model-UN-Website/static/css/main.10f683a9.chunk.css",
+    "main.js": "/International-Model-UN-Website/static/js/main.c1a841e4.chunk.js",
+    "main.js.map": "/International-Model-UN-Website/static/js/main.c1a841e4.chunk.js.map",
     "runtime-main.js": "/International-Model-UN-Website/static/js/runtime-main.87ef2298.js",
     "runtime-main.js.map": "/International-Model-UN-Website/static/js/runtime-main.87ef2298.js.map",
     "static/css/2.64a99b10.chunk.css": "/International-Model-UN-Website/static/css/2.64a99b10.chunk.css",
-    "static/js/2.0f951186.chunk.js": "/International-Model-UN-Website/static/js/2.0f951186.chunk.js",
-    "static/js/2.0f951186.chunk.js.map": "/International-Model-UN-Website/static/js/2.0f951186.chunk.js.map",
+    "static/js/2.b5f2bd07.chunk.js": "/International-Model-UN-Website/static/js/2.b5f2bd07.chunk.js",
+    "static/js/2.b5f2bd07.chunk.js.map": "/International-Model-UN-Website/static/js/2.b5f2bd07.chunk.js.map",
     "index.html": "/International-Model-UN-Website/index.html",
-    "precache-manifest.b67a01dc5015ebc5482f5559456d2351.js": "/International-Model-UN-Website/precache-manifest.b67a01dc5015ebc5482f5559456d2351.js",
+    "precache-manifest.687da2f94c5f292dce56ca8efecd696a.js": "/International-Model-UN-Website/precache-manifest.687da2f94c5f292dce56ca8efecd696a.js",
     "service-worker.js": "/International-Model-UN-Website/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/International-Model-UN-Website/static/css/2.64a99b10.chunk.css.map",
-    "static/css/main.002d3436.chunk.css.map": "/International-Model-UN-Website/static/css/main.002d3436.chunk.css.map",
-    "static/js/2.0f951186.chunk.js.LICENSE": "/International-Model-UN-Website/static/js/2.0f951186.chunk.js.LICENSE",
+    "static/css/main.10f683a9.chunk.css.map": "/International-Model-UN-Website/static/css/main.10f683a9.chunk.css.map",
+    "static/js/2.b5f2bd07.chunk.js.LICENSE": "/International-Model-UN-Website/static/js/2.b5f2bd07.chunk.js.LICENSE",
     "static/media/Sand Siwapron.png": "/International-Model-UN-Website/static/media/Sand Siwapron.3c6e5ba0.png",
     "static/media/blog_img.png": "/International-Model-UN-Website/static/media/blog_img.095f796f.png",
     "static/media/first_div.css": "/International-Model-UN-Website/static/media/nasa-53884-unsplash (1).7167ef84.png",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.87ef2298.js",
     "static/css/2.64a99b10.chunk.css",
-    "static/js/2.0f951186.chunk.js",
-    "static/css/main.002d3436.chunk.css",
-    "static/js/main.714e493c.chunk.js"
+    "static/js/2.b5f2bd07.chunk.js",
+    "static/css/main.10f683a9.chunk.css",
+    "static/js/main.c1a841e4.chunk.js"
   ]
 }
