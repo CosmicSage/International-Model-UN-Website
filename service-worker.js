@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/International-Model-UN-Website/precache-manifest.e263d5ed2029b7c2191285b868547b83.js"
+  "/International-Model-UN-Website/precache-manifest.881e9993f10f48863bbb3d49da3dcc91.js"
 );
 
 self.addEventListener('message', (event) => {

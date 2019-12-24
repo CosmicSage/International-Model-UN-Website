@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/International-Model-UN-Website/static/css/main.a58cb598.chunk.css",
-    "main.js": "/International-Model-UN-Website/static/js/main.9b7a5aea.chunk.js",
-    "main.js.map": "/International-Model-UN-Website/static/js/main.9b7a5aea.chunk.js.map",
+    "main.css": "/International-Model-UN-Website/static/css/main.01c0dfe2.chunk.css",
+    "main.js": "/International-Model-UN-Website/static/js/main.929e52c2.chunk.js",
+    "main.js.map": "/International-Model-UN-Website/static/js/main.929e52c2.chunk.js.map",
     "runtime-main.js": "/International-Model-UN-Website/static/js/runtime-main.87ef2298.js",
     "runtime-main.js.map": "/International-Model-UN-Website/static/js/runtime-main.87ef2298.js.map",
     "static/css/2.64a99b10.chunk.css": "/International-Model-UN-Website/static/css/2.64a99b10.chunk.css",
     "static/js/2.b5f2bd07.chunk.js": "/International-Model-UN-Website/static/js/2.b5f2bd07.chunk.js",
     "static/js/2.b5f2bd07.chunk.js.map": "/International-Model-UN-Website/static/js/2.b5f2bd07.chunk.js.map",
     "index.html": "/International-Model-UN-Website/index.html",
-    "precache-manifest.e263d5ed2029b7c2191285b868547b83.js": "/International-Model-UN-Website/precache-manifest.e263d5ed2029b7c2191285b868547b83.js",
+    "precache-manifest.881e9993f10f48863bbb3d49da3dcc91.js": "/International-Model-UN-Website/precache-manifest.881e9993f10f48863bbb3d49da3dcc91.js",
     "service-worker.js": "/International-Model-UN-Website/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/International-Model-UN-Website/static/css/2.64a99b10.chunk.css.map",
-    "static/css/main.a58cb598.chunk.css.map": "/International-Model-UN-Website/static/css/main.a58cb598.chunk.css.map",
+    "static/css/main.01c0dfe2.chunk.css.map": "/International-Model-UN-Website/static/css/main.01c0dfe2.chunk.css.map",
     "static/js/2.b5f2bd07.chunk.js.LICENSE": "/International-Model-UN-Website/static/js/2.b5f2bd07.chunk.js.LICENSE",
     "static/media/Sand Siwapron.png": "/International-Model-UN-Website/static/media/Sand Siwapron.3c6e5ba0.png",
     "static/media/blog_img.png": "/International-Model-UN-Website/static/media/blog_img.095f796f.png",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.87ef2298.js",
     "static/css/2.64a99b10.chunk.css",
     "static/js/2.b5f2bd07.chunk.js",
-    "static/css/main.a58cb598.chunk.css",
-    "static/js/main.9b7a5aea.chunk.js"
+    "static/css/main.01c0dfe2.chunk.css",
+    "static/js/main.929e52c2.chunk.js"
   ]
 }
