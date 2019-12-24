@@ -61,9 +61,11 @@ function Blog(props) {
 }
 const ChangeButtons = props => (
   <div className="changeButtons" style={{textAlign : "center"}}>
-    <img className="changeButtonLeft" src={`${require('./static/images/changeButton.png')}`}/>
     <img onClick={() => {
-      alert("BAnge");
+      document.getElementById(props.id).scrollLeft += 300;
+    }}  className="changeButtonLeft" src={`${require('./static/images/changeButton.png')}`}/>
+    <img onClick={() => {
+      document.getElementById(props.id).scrollLeft -= 300;
     }} style={{transform : "rotate(180deg)"}} className="changeButtonRight" src={`${require('./static/images/changeButton.png')}`}/>
   </div>
 )
@@ -161,12 +163,12 @@ export default function HomePage() {
       <div className="second_div">
         <h1 style={styles.Title2}>Upcoming MUN<br/>Conferences</h1>
         <div className="carousel">
-          <div className="conferences">
+          <div id="conferences" className="conferences">
             {Conferences.map((con, id) => (
               <Conference name={con.name} img={con.img} location={con.location}/>
             ))}
           </div>
-          <ChangeButtons />
+          <ChangeButtons id="conferences"/>
         </div>
         <h1 style={styles.Title2}>All you need<br/>in one place</h1>
         <div className="services">
@@ -176,12 +178,12 @@ export default function HomePage() {
         </div>
         <h1 style={styles.Title2}>Our Blogs</h1>
         <div className="carousel">
-          <div className="conferences">
+          <div id="blogs" className="conferences">
             {Blogs.map(blog => (
               <Blog img={blog.img} time={blog.time} author={blog.author} title={blog.title}/>
             ))}
           </div>
-          <ChangeButtons />
+          <ChangeButtons id="blogs"/>
         </div>
         <h1 style={styles.Title2}>What people have to say about us!</h1>
         <div className="reviews">
@@ -219,61 +221,4 @@ let styles = {
   Title2 : {
     fontSize : 24, color : "#FFB444", paddingBottom : 20, marginTop : 1
   }}
-/**https://www.figma.com/file/xX9n7skLyaoc6DB2xOA7ss/Untitled?node-id=0%3A1
-<div className="carousel-item">
-  <div className="d-block w-1oo carousel_slide"></div>
-</div>
-
-import React from "react";
-const Reviews = [
-  {img : require("../static/images/Sand Siwapron.png"), person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
-  {img : require("../static/images/Sand Siwapron.png"), person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
-  {img : require("../static/images/Sand Siwapron.png"), person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
-];
-const Review = props => (
-  <div className="carousel-item ">
-    <div className="w-1oo carousel_slide">
-      <div className="review">
-        <span><img src={require("../static/images/quote.png")}/>{props.review}</span>
-      </div>
-      <div className="person">
-          <img src={props.img}/>
-          <span style={{fontWeight : "bold", fontSize : 18}}>{props.person.name}</span>
-          <span style={{fontSize : 16}}>{props.person.nation}</span>
-      </div>
-    </div>
-  </div>
-);
-export default function Carousel() {
-  return (
-    <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-      <ol className="carousel-indicators">
-        <li  data-target="#carouselExampleIndicators" data-slide-to="0" className="active invertt"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1" className="invertt"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2" className="invertt"></li>
-      </ol>
-      <div className="carousel-inner">
-        {Reviews.map(review => <Review img={review.img} person={review.person} review={review.review}/> )}
-      </div>
-      <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span className="carousel-control-prev-icon invertt" aria-hidden="true"></span>
-        <span className="sr-only">Previous</span>
-      </a>
-      <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span className="carousel-control-next-icon invertt" aria-hidden="true"></span>
-        <span className="sr-only">Next</span>
-      </a>
-    </div>
-   );
-}
-
-
-// <img className="d-block w-100"  alt="First slide"/>
-
-// <div className="carousel-item">
-  // <div className="d-block w-1oo carousel_slide"></div>
-// </div>
-
-// <RoundArrowButton color="light" value="Know More" size="lg" arrow="./static/images/whitearrow.png"/>
-
-**/
+/**https://www.figma.com/file/xX9n7skLyaoc6DB2xOA7ss/Untitled?node-id=0%3A1**/

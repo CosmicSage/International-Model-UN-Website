@@ -1,7 +1,7 @@
 import React from "react";
 const Reviews = [
   {img : require("../static/images/Sand Siwapron.png"), person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
-  {img : require("../static/images/Sand Siwapron.png"), person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
+  {img : require("../static/images/Sand Siwapron.png"), person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
   {img : require("../static/images/Sand Siwapron.png"), person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
   {img : require("../static/images/Sand Siwapron.png"), person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
 ];
@@ -48,12 +48,3 @@ export default function Carousel() {
     </div>
    );
 }
-
-
-// <img className="d-block w-100"  alt="First slide"/>
-
-// <div className="carousel-item">
-  // <div className="d-block w-1oo carousel_slide"></div>
-// </div>
-
-// <RoundArrowButton color="light" value="Know More" size="lg" arrow="./static/images/whitearrow.png"/>
