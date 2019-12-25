@@ -10,4 +10,4 @@ Hey to see the real code go back in history with git with following steps
    cd International-Model-UN-Website-real;
    npm install;
    ```
-Thats It goto localhost:3000 to see the thing
+Thats It goto localhost:3000 in browser to see the thing
