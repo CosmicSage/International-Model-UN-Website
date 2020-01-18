@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0f3f5eba7d1e64a3d2bc1bb5d13c2b53",
+    "revision": "2cc54cf1883e2b91cdeaf7b04f1b8103",
     "url": "/International-Model-UN-Website/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/International-Model-UN-Website/static/css/2.64a99b10.chunk.css"
   },
   {
-    "revision": "13f98bae8b6df1dade14",
+    "revision": "bed7d632e4b9c6dc1350",
     "url": "/International-Model-UN-Website/static/css/main.01c0dfe2.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/International-Model-UN-Website/static/js/2.ab4392f0.chunk.js.LICENSE"
   },
   {
-    "revision": "13f98bae8b6df1dade14",
-    "url": "/International-Model-UN-Website/static/js/main.46a504d7.chunk.js"
+    "revision": "bed7d632e4b9c6dc1350",
+    "url": "/International-Model-UN-Website/static/js/main.1d265263.chunk.js"
   },
   {
     "revision": "e61a7906e53a5d1405a1",
