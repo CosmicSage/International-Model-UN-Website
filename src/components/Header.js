@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react"; import '../static/css/nav.css'; const NavElements = ["Home", "Search For IMUNs", "Pricing", "Organise IMUN", "About Us", "Blogs"];
 export default function Header() {
   return (
@@ -12,11 +13,15 @@ export default function Header() {
         <ul className="navbar-nav mr-auto">
           {NavElements.map(element => (
             <li>
-              <a href={element === "Pricing" ?  `/#/pricing` : '#'} style={{color : "GhostWhite"}} className="nav-link">{element}</a>
+              <Link to='/pricing'>
+                <a style={{color : "GhostWhite"}} className="nav-link">{element}</a>
+              </Link>
             </li>
           ))}
           <li>
-            <a href="/#/auth" style={{color : "GhostWhite"}} className="nav-link">Login/Register <img style={styles.arrow} src={require("../static/images/Arrow-Vector.png").default}/></a>
+            <Link to='/auth'>
+              <a style={{color : "GhostWhite"}} className="nav-link">Login/Register <img style={styles.arrow} src={require("../static/images/Arrow-Vector.png").default}/></a>
+            </Link>
           </li>
         </ul>
       </div>
