@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/International-Model-UN-Website/static/css/main.0252b556.chunk.css",
-    "main.js": "/International-Model-UN-Website/static/js/main.9c8b58f2.chunk.js",
-    "main.js.map": "/International-Model-UN-Website/static/js/main.9c8b58f2.chunk.js.map",
+    "main.js": "/International-Model-UN-Website/static/js/main.d43a0e6f.chunk.js",
+    "main.js.map": "/International-Model-UN-Website/static/js/main.d43a0e6f.chunk.js.map",
     "runtime-main.js": "/International-Model-UN-Website/static/js/runtime-main.ecf8d79b.js",
     "runtime-main.js.map": "/International-Model-UN-Website/static/js/runtime-main.ecf8d79b.js.map",
     "static/css/2.95f25948.chunk.css": "/International-Model-UN-Website/static/css/2.95f25948.chunk.css",
-    "static/js/2.fd0d1cb2.chunk.js": "/International-Model-UN-Website/static/js/2.fd0d1cb2.chunk.js",
-    "static/js/2.fd0d1cb2.chunk.js.map": "/International-Model-UN-Website/static/js/2.fd0d1cb2.chunk.js.map",
+    "static/js/2.cb39584c.chunk.js": "/International-Model-UN-Website/static/js/2.cb39584c.chunk.js",
+    "static/js/2.cb39584c.chunk.js.map": "/International-Model-UN-Website/static/js/2.cb39584c.chunk.js.map",
     "index.html": "/International-Model-UN-Website/index.html",
     "static/css/2.95f25948.chunk.css.map": "/International-Model-UN-Website/static/css/2.95f25948.chunk.css.map",
     "static/css/main.0252b556.chunk.css.map": "/International-Model-UN-Website/static/css/main.0252b556.chunk.css.map",
-    "static/js/2.fd0d1cb2.chunk.js.LICENSE.txt": "/International-Model-UN-Website/static/js/2.fd0d1cb2.chunk.js.LICENSE.txt",
+    "static/js/2.cb39584c.chunk.js.LICENSE.txt": "/International-Model-UN-Website/static/js/2.cb39584c.chunk.js.LICENSE.txt",
     "static/media/Sand Siwapron.png": "/International-Model-UN-Website/static/media/Sand Siwapron.25fc6ee6.png",
     "static/media/blog_img.png": "/International-Model-UN-Website/static/media/blog_img.065cf297.png",
     "static/media/first_div.css": "/International-Model-UN-Website/static/media/nasa-53884-unsplash (1).7f166488.png",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.ecf8d79b.js",
     "static/css/2.95f25948.chunk.css",
-    "static/js/2.fd0d1cb2.chunk.js",
+    "static/js/2.cb39584c.chunk.js",
     "static/css/main.0252b556.chunk.css",
-    "static/js/main.9c8b58f2.chunk.js"
+    "static/js/main.d43a0e6f.chunk.js"
   ]
 }
