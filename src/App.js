@@ -40,13 +40,13 @@ function Blog(props) {
     <div className="service blog">
       <div className="blog_content">
         <div className="blog_poster">
-          <div style={{backgroundImage : `url(${require(`${props.img}`)})`}} className="blog_img"></div>
+          <div style={{backgroundImage : `url(${require(`${props.img}`).default})`}} className="blog_img"></div>
             <div style={{color : "#fff"}} className="blog_meta">
               <span style={{paddingLeft : 5, fontWeight : "bold"}}>{props.time}</span>
               <div className="blog_share">
                 <span>Share :</span>
-                <img style={{padding : 5}} src={require("./static/images/facebook.png")} />
-                <img src={require("./static/images/instagram.png")} />
+                <img style={{padding : 5}} src={require("./static/images/facebook.png").default} />
+                <img src={require("./static/images/instagram.png").default} />
               </div>
             </div>
           </div>
@@ -63,10 +63,10 @@ const ChangeButtons = props => (
   <div className="changeButtons" style={{textAlign : "center"}}>
     <img onClick={() => {
       document.getElementById(props.id).scrollLeft += 300;
-    }}  className="changeButtonLeft" src={`${require('./static/images/changeButton.png')}`}/>
+    }}  className="changeButtonLeft" src={`${require('./static/images/changeButton.png').default}`}/>
     <img onClick={() => {
       document.getElementById(props.id).scrollLeft -= 300;
-    }} style={{transform : "rotate(180deg)"}} className="changeButtonRight" src={`${require('./static/images/changeButton.png')}`}/>
+    }} style={{transform : "rotate(180deg)"}} className="changeButtonRight" src={`${require('./static/images/changeButton.png').default}`}/>
   </div>
 )
 function ServiceBox(service) {
@@ -74,7 +74,7 @@ function ServiceBox(service) {
     <div className="service_pad">
         <div className="service">
           <div className="service_head">
-            <img src={`${require(`./static/images/${service.img}`)}`}/>
+            <img src={`${require(`./static/images/${service.img}`).default}`}/>
             <div style={{paddingLeft : 8}}><span>{service.head}</span></div>
           </div>
           <div className="service_body">
@@ -92,7 +92,7 @@ const OpaqueBox = props => {
   return (
       <>
       <div className="opaque_head">
-        <img src={require(`${props.img}`)}/>
+        <img src={require(`${props.img}`).default}/>
         <a style={styles.head}>{props.head}</a>
       </div>
       <div className="opaque_body">
@@ -105,7 +105,7 @@ const OpaqueBox = props => {
 function Conference (props) {
   return (
     <div className="wrap">
-    <div className="conference" style={{backgroundImage : `url(${require(`${props.img}`)})`}}>
+    <div className="conference" style={{backgroundImage : `url(${require(`${props.img}`).default})`}}>
     <RoundArrowButton color="light" value="Know More" size="lg" arrow="./static/images/whitearrow.png"/>
     <p style={{fontSize : "18px"}}>{props.location}</p>
     <h3 style={{ fontSize : "30px"}} dangerouslySetInnerHTML={{ __html: props.name }}/>
@@ -115,7 +115,7 @@ function Conference (props) {
 }
 const RoundArrowButton = props => {console.log(props.value);
   try {
-    var arrow = require(`${props.arrow}`); var number = 5;
+    var arrow = require(`${props.arrow}`).default; var number = 5;
   }catch (e) {
     arrow = null;
     number = 0;
@@ -135,7 +135,7 @@ function SpecialInputBox(props) {
 }
 const InfoElement = props => (
   <div className="info_element">
-    <p style={{fontSize : 8}}><img src={require(`${props.img}`)}/></p>
+    <p style={{fontSize : 8}}><img src={require(`${props.img}`).default}/></p>
     <div className="info_content">
       <span>{props.title}</span><p style={{color : "#0E3660", fontSize : 20, paddingBottom : 10}}>{props.value}</p>
     </div>

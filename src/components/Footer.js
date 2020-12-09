@@ -4,9 +4,9 @@ import "../static/css/ServiceBox.css";
 const Links = ["Search For IMUNs", "Organise IMUN", "Features", "Blogs"];
 const MUN_LINKS = ["MUN Conference Highlights", "MUN Conference List", "MUN Conference Calendar", "MUN Conference Map"];
 const Infos = [
-  {img : require("../static/images/call.png"), title : "Phone", value : "(+91) 999 741 5973"},
-  {img : require("../static/images/mail.png"), title : "Mail", value : "info@internationalmun.org"},
-  {img : require("../static/images/location.png"), title : "Address", value : "E-73 Sector 50, Gautam Budh Nagar, Noida, India - 201 304"},
+  {img : require("../static/images/call.png").default, title : "Phone", value : "(+91) 999 741 5973"},
+  {img : require("../static/images/mail.png").default, title : "Mail", value : "info@internationalmun.org"},
+  {img : require("../static/images/location.png").default, title : "Address", value : "E-73 Sector 50, Gautam Budh Nagar, Noida, India - 201 304"},
 
 ];
 const InfoElement = props => (

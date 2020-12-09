@@ -1,9 +1,9 @@
 import React from "react";
 const Reviews = [
-  {img : require("../static/images/Sand Siwapron.png"), person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
-  {img : require("../static/images/Sand Siwapron.png"), person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
-  {img : require("../static/images/Sand Siwapron.png"), person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
-  {img : require("../static/images/Sand Siwapron.png"), person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
+  {img : require("../static/images/Sand Siwapron.png").default, person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
+  {img : require("../static/images/Sand Siwapron.png").default, person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
+  {img : require("../static/images/Sand Siwapron.png").default, person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
+  {img : require("../static/images/Sand Siwapron.png").default, person : {name : "Sand Siwapron", nation : "Thailand"}, review : "This is my first Model United Nations conference where I have gained a lot of new experience and have met people who are smart, kind and hardworking. Most importantly, it made me want to improve myself more!"},
 ];
 function Index(props) {
   if (props.index === 0)
@@ -17,7 +17,7 @@ const Review = props => {
     <div className={`carousel-item ${activate}`} >
       <div className="w-1oo carousel_slide">
         <div className="review">
-          <span><img src={require("../static/images/quote.png")}/>{props.review}</span>
+          <span><img src={require("../static/images/quote.png").default}/>{props.review}</span>
         </div>
         <div className="person">
             <img src={props.img}/>

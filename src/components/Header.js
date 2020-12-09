@@ -1,9 +1,9 @@
-import React from "react"; import '../static/css/nav.css'; const NavElements = ["Home", "Search For IMUNs", "Features", "Organise IMUN", "About Us", "Blogs"];
+import React from "react"; import '../static/css/nav.css'; const NavElements = ["Home", "Search For IMUNs", "Pricing", "Organise IMUN", "About Us", "Blogs"];
 export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg  navbar-dark custom_nav">
       <a style={styles.navItem} className="navbar-brand Brand" href="#">
-        <img src={require("../static/images/IMUN.png")} style={{paddingRight : 10}}/>
+        <img src={require("../static/images/IMUN.png").default} style={{paddingRight : 10}}/>
       </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -12,11 +12,11 @@ export default function Header() {
         <ul className="navbar-nav mr-auto">
           {NavElements.map(element => (
             <li>
-              <a href='#' style={{color : "GhostWhite"}} className="nav-link">{element}</a>
+              <a href={element === "Pricing" ?  `/pricing` : '#'} style={{color : "GhostWhite"}} className="nav-link">{element}</a>
             </li>
           ))}
           <li>
-            <a style={{color : "GhostWhite"}} className="nav-link">Login/Register <img style={styles.arrow} src={require("../static/images/Arrow-Vector.png")}/></a>
+            <a style={{color : "GhostWhite"}} className="nav-link">Login/Register <img style={styles.arrow} src={require("../static/images/Arrow-Vector.png").default}/></a>
           </li>
         </ul>
       </div>
