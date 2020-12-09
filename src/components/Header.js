@@ -12,11 +12,11 @@ export default function Header() {
         <ul className="navbar-nav mr-auto">
           {NavElements.map(element => (
             <li>
-              <a href={element === "Pricing" ?  `/pricing` : '#'} style={{color : "GhostWhite"}} className="nav-link">{element}</a>
+              <a href={element === "Pricing" ?  `/#/pricing` : '#'} style={{color : "GhostWhite"}} className="nav-link">{element}</a>
             </li>
           ))}
           <li>
-            <a style={{color : "GhostWhite"}} className="nav-link">Login/Register <img style={styles.arrow} src={require("../static/images/Arrow-Vector.png").default}/></a>
+            <a href="/#/auth" style={{color : "GhostWhite"}} className="nav-link">Login/Register <img style={styles.arrow} src={require("../static/images/Arrow-Vector.png").default}/></a>
           </li>
         </ul>
       </div>
